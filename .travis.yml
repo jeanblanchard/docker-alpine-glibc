@@ -40,7 +40,7 @@ script:
   # Build
   - docker build -t $IMAGE_NAME .
   # Test
-  - docker run $IMAGE_NAME java -version
+  - docker run $IMAGE_NAME apk info glibc
   # Publish
   - "if [ $PUBLISH_IMAGE = true ]; then for IMAGE_TAG in $IMAGE_TAGS; do docker build -t $HUB_USERNAME/$IMAGE_NAME:$IMAGE_TAG .; docker push $HUB_USERNAME/$IMAGE_NAME:$IMAGE_TAG; done; fi"
 
