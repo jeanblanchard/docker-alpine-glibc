@@ -1,4 +1,4 @@
-## Minimal Alpine Linux Docker image with glibc [![Build Status](https://travis-ci.org/jeanblanchard/docker-alpine-glibc.svg?branch=master)](https://travis-ci.org/jeanblanchard/docker-alpine-glibc)
+## Minimal Alpine Linux Docker image with glibc [![Circle CI](https://circleci.com/gh/jeanblanchard/docker-alpine-glibc/tree/master.svg?style=shield)](https://circleci.com/gh/jeanblanchard/docker-alpine-glibc/tree/master)
 
 Basic [Docker](https://www.docker.com/) image based on [Alpine Linux](http://alpinelinux.org/), with glibc.
 

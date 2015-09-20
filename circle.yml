@@ -1,0 +1,28 @@
+machine:
+  environment:
+    IMAGE_NAME: alpine-glibc
+    IMAGE_TAGS: "latest"
+    IMAGE_OWNER: jeanblanchard
+    # HUB_USERNAME, HUB_PASSWORD and HUB_EMAIL should be configured from the CircleCI project settings
+  services:
+    - docker
+
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init
+
+dependencies:
+  override:
+    - docker info
+    - build/build.sh
+
+test:
+  override:
+    - ./test.sh
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - build/publish.sh
