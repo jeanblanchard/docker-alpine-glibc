@@ -3,12 +3,22 @@
 # Exit on first error
 set -e
 
+# Read parameters
+. `dirname $0`/build/parseargs.sh
+
 # Parameters check
 
-if [ -z "$IMAGE_NAME" ] || [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-  echo "Please set the following environment variables:"
-  echo "  IMAGE_NAME:     The name of the docker image to build"
-  exit -1
+if [ "$SHOW_HELP" = "true" ] || [ -z "$IMAGE_NAME" ]; then
+  echo "Usage: $0 [options]"
+  echo
+  echo "Options:"
+  echo " -n, --name, --image-name <name> The name of the docker image to test. REQUIRED"
+  echo
+  if [ "$SHOW_HELP" = "true" ]; then
+    exit
+  else
+    exit 1
+  fi
 fi
 
 # Tests
@@ -17,4 +27,4 @@ echo
 echo "###"
 echo "### Testing the image"
 echo "###"
-docker run $IMAGE_NAME apk info glibc
+docker run ${IMAGE_NAME} apk info glibc

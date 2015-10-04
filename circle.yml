@@ -15,14 +15,14 @@ checkout:
 dependencies:
   override:
     - docker info
-    - build/build.sh
+    - build/build.sh --image-name=${IMAGE_NAME} --image-owner=${IMAGE_OWNER} --image-tags="${IMAGE_TAGS}"
 
 test:
   override:
-    - ./test.sh
+    - ./test.sh --image-name=${IMAGE_NAME}
 
 deployment:
   hub:
     branch: master
     commands:
-      - build/publish.sh
+      - build/publish.sh --image-name=${IMAGE_NAME} --image-owner=${IMAGE_OWNER} --image-tags="${IMAGE_TAGS}"
