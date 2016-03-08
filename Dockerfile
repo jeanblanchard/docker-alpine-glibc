@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER Jean Blanchard <jean@blanchard.io>
 
-ENV GLIBC_VERSION 2.22-r8
+ENV GLIBC_VERSION 2.23-r1
 
 # Download and install glibc
 RUN apk add --update curl && \
