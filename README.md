@@ -4,5 +4,5 @@ Basic [Docker](https://www.docker.com/) image based on [Alpine Linux](http://alp
 
 ### Tags
 
-* [`latest` `3.6`](https://github.com/jeanblanchard/docker-alpine-glibc/blob/master/Dockerfile) [![](https://badge.imagelayers.io/jeanblanchard/alpine-glibc:latest.svg)](https://imagelayers.io/?images=jeanblanchard/alpine-glibc:latest 'Get your own badge on imagelayers.io')
-* [`3.5`](https://github.com/jeanblanchard/docker-alpine-glibc/blob/alpine3.5/Dockerfile) [![](https://badge.imagelayers.io/jeanblanchard/alpine-glibc:3.5.svg)](https://imagelayers.io/?images=jeanblanchard/alpine-glibc:3.5 'Get your own badge on imagelayers.io')
+* [`latest` `3.6`](https://github.com/jeanblanchard/docker-alpine-glibc/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/jeanblanchard/alpine-glibc.svg)](https://microbadger.com/images/jeanblanchard/alpine-glibc "Get your own image badge on microbadger.com")
+* [`3.5`](https://github.com/jeanblanchard/docker-alpine-glibc/blob/alpine3.5/Dockerfile) [![](https://images.microbadger.com/badges/image/jeanblanchard/alpine-glibc:3.5.svg)](https://microbadger.com/images/jeanblanchard/alpine-glibc:3.5 "Get your own image badge on microbadger.com")
