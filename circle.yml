@@ -1,7 +1,7 @@
 machine:
   environment:
     IMAGE_NAME: alpine-glibc
-    IMAGE_TAGS: "latest 3.7 3.7_2.27-r0"
+    IMAGE_TAGS: "latest 3.8 3.8_2.27-r0"
     IMAGE_OWNER: jeanblanchard
     # HUB_USERNAME, HUB_PASSWORD and HUB_EMAIL should be configured from the CircleCI project settings
   services:
