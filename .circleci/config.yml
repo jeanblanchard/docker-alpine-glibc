@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  dummy_job:
+    steps:
+      - run: echo ignored
+workflows:
+  version: 2
+  dummy_workflow:
+    jobs:
+      - dummy_job:      
+          filters:
+            branches:
+              ignore: alpine3.5
