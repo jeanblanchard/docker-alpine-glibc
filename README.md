@@ -4,5 +4,4 @@ Basic [Docker](https://www.docker.com/) image based on [Alpine Linux](http://alp
 
 ### Support
 
-The 3.8 branch of Alpine Linux will receive updates until 2020-05-01 .
-
+The 3.8 branch of Alpine Linux reached End of Support on 2020-05-01.
