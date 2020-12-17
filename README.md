@@ -4,4 +4,4 @@ Basic [Docker](https://www.docker.com/) image based on [Alpine Linux](http://alp
 
 ### Support
 
-The 3.15 branch of Alpine Linux will receive updates until 2023-11-01.
+The 3.15 branch of Alpine Linux reached End of Support on 2023-11-01.
