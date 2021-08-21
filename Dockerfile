@@ -1,7 +1,7 @@
-FROM alpine:3.14.0
+FROM alpine:3.14.1
 MAINTAINER Jean Blanchard <jean@blanchard.io>
 
-ENV GLIBC_VERSION 2.33-r0
+ENV GLIBC_VERSION 2.34-r0
 
 # Download and install glibc
 RUN apk add --update curl && \
