@@ -2,7 +2,7 @@ jobConfig: &jobConfig
   parallelism: 1
   environment:
     IMAGE_NAME: alpine-glibc
-    IMAGE_TAGS: 3.13 3.13.7 3.13_2.35-r0 3.13.7_2.35-r0
+    IMAGE_TAGS: 3.13 3.13.8 3.13_2.35-r0 3.13.8_2.35-r0
     IMAGE_OWNER: jeanblanchard
   docker:
   - image: circleci/buildpack-deps:stretch
