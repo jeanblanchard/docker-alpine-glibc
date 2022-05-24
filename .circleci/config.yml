@@ -54,4 +54,4 @@ workflows:
             - build_and_test
           filters:
             branches:
-              only: main
+              only: alpine3.14
