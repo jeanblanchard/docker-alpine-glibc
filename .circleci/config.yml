@@ -5,7 +5,7 @@ jobConfig: &jobConfig
     IMAGE_TAGS: latest 3.16 3.16.3 3.16_2.35-r0 3.16.3_2.35-r0
     IMAGE_OWNER: jeanblanchard
   docker:
-  - image: circleci/buildpack-deps:stretch
+  - image: cimg/base:current
 
 version: 2
 jobs:
