@@ -1,4 +1,4 @@
-FROM alpine:3.16.4
+FROM alpine:3.16.5
 MAINTAINER Jean Blanchard <jean@blanchard.io>
 
 ENV GLIBC_VERSION 2.35-r0
