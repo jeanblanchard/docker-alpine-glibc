@@ -2,7 +2,7 @@ jobConfig: &jobConfig
   parallelism: 1
   environment:
     IMAGE_NAME: alpine-glibc
-    IMAGE_TAGS: latest 3.17 3.17.3 3.17_2.35-r0 3.17.3_2.35-r0
+    IMAGE_TAGS: latest 3.17 3.17.3 3.17_2.35-r1 3.17.3_2.35-r1
     IMAGE_OWNER: jeanblanchard
   docker:
   - image: cimg/base:current
