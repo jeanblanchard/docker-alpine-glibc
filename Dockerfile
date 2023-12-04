@@ -1,5 +1,5 @@
-FROM alpine:3.16.7
-MAINTAINER Jean Blanchard <jean@blanchard.io>
+FROM alpine:3.16.8
+LABEL org.opencontainers.image.authors="Jean Blanchard <jean@blanchard.io>"
 
 ENV GLIBC_VERSION 2.35-r1
 
@@ -12,4 +12,4 @@ RUN apk add --update curl && \
   /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib && \
   echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf && \
   apk del curl && \
-  rm -rf glibc.apk glibc-bin.apk /var/cache/apk/*
+  rm -rf /var/cache/apk/* glibc.apk glibc-bin.apk
