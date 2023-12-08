@@ -1,4 +1,4 @@
-FROM alpine:3.18.5
+FROM alpine:3.19.0
 LABEL org.opencontainers.image.authors="Jean Blanchard <jean@blanchard.io>"
 
 ENV GLIBC_VERSION 2.35-r1
