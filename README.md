@@ -1,3 +1,9 @@
+## The end of the line
+
+I have now stopped providing updates for this image. 
+
+I continued to provide updated Alpine and Glibc for a few years even after I stopped having any use for this, but I've reached a point where I wonder whether *anyone* should use Glibc on Alpine nowadays. There are other small distros that provide Glibc natively, even if they are not *as* small, so there really is no need for this kind of thing.
+
 ## Minimal Alpine Linux Docker image with glibc
 
 Basic [Docker](https://www.docker.com/) image based on [Alpine Linux](http://alpinelinux.org/), with [glibc](https://github.com/sgerrand/alpine-pkg-glibc).
